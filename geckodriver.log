@@ -1,0 +1,218 @@
+1612191033737	geckodriver	INFO	Listening on 127.0.0.1:2161
+1612191036810	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\willi\\AppData\\Local\\Temp\\rust_mozprofiley79syN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612191038880	Marionette	INFO	Listening on port 2169
+1612191039067	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612191039079	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+1612191060206	geckodriver	INFO	Listening on 127.0.0.1:2241
+1612191063286	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\willi\\AppData\\Local\\Temp\\rust_mozprofileZcZxJ7"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612191065216	Marionette	INFO	Listening on port 2249
+1612191065331	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612191065338	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+1612191094846	geckodriver	INFO	Listening on 127.0.0.1:2308
+1612191097895	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\willi\\AppData\\Local\\Temp\\rust_mozprofileh7jfe5"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612191099858	Marionette	INFO	Listening on port 2316
+1612191099936	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612191099943	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+1612191107904	Marionette	ERROR	[37] No reply from Marionette:Register
+1612191163103	geckodriver	INFO	Listening on 127.0.0.1:2394
+1612191166181	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\willi\\AppData\\Local\\Temp\\rust_mozprofileevNLyG"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612191168089	Marionette	INFO	Listening on port 2404
+1612191168227	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612191168236	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+1612191184128	Marionette	ERROR	[37] No reply from Marionette:Register
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+console.error: "getApplied@resource://devtools/server/actors/page-style.js:571:5\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:358:10
+
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:571:5)", "resource://devtools/shared/protocol/Front.js", 361))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2241))
+console.error: "Error sending event: display-change"
+console.error: (new TypeError("value is null", "resource://devtools/server/actors/inspector/event-collector.js", 717))
+TypeError: value is null: getProps@resource://devtools/server/actors/inspector/event-collector.js:717:13
+getListeners@resource://devtools/server/actors/inspector/event-collector.js:668:24
+hasListeners@resource://devtools/server/actors/inspector/event-collector.js:227:17
+hasEventListeners@resource://devtools/server/actors/inspector/event-collector.js:800:21
+get _hasEventListeners@resource://devtools/server/actors/inspector/node.js:383:33
+form@resource://devtools/server/actors/inspector/node.js:207:7
+write@resource://devtools/shared/protocol/types.js:358:32
+types.addArrayType/write/<@resource://devtools/shared/protocol/types.js:215:33
+write@resource://devtools/shared/protocol/types.js:215:16
+write@resource://devtools/shared/protocol/Request.js:109:22
+write@resource://devtools/shared/protocol/Request.js:39:26
+_sendEvent@resource://devtools/shared/protocol/Actor.js:66:24
+initialize/<@resource://devtools/shared/protocol/Actor.js:46:16
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+_onReflows@resource://devtools/server/actors/inspector/walker.js:587:12
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+_startEventLoop@resource://devtools/server/actors/reflow.js:314:12
+notify@resource://gre/modules/Timer.jsm:62:17
+
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/page-style.js:571:5\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:358:10
+
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:571:5)", "resource://devtools/shared/protocol/Front.js", 361))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2241))
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/page-style.js:571:5\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:358:10
+
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:571:5)", "resource://devtools/shared/protocol/Front.js", 361))
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/page-style.js:571:5\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:358:10
+
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:571:5)", "resource://devtools/shared/protocol/Front.js", 361))
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "node is null"
+console.error: "getApplied@resource://devtools/server/actors/page-style.js:571:5\nhandler@resource://devtools/shared/protocol/Actor.js:172:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:68:16\n"
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:226:34
+emit@resource://devtools/shared/event-emitter.js:172:18
+emit@resource://devtools/shared/event-emitter.js:324:18
+getMutations@resource://devtools/client/fronts/walker.js:358:10
+
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child3/pagestyle26 (resource://devtools/server/actors/page-style.js:571:5)", "resource://devtools/shared/protocol/Front.js", 361))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2241))
+1612191532313	geckodriver	INFO	Listening on 127.0.0.1:2565
+1612191535392	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\willi\\AppData\\Local\\Temp\\rust_mozprofileP6Tqfg"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612191537316	Marionette	INFO	Listening on port 2574
+1612191537434	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612191537441	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript error: resource://gre/actors/PictureInPictureChild.jsm, line 569: TypeError: this.contentWindow is null
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+1612191586197	geckodriver	INFO	Listening on 127.0.0.1:2650
+1612191589287	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\willi\\AppData\\Local\\Temp\\rust_mozprofileUvh9ju"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612191591187	Marionette	INFO	Listening on port 2658
+1612191591353	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612191591360	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+1612192293624	geckodriver	INFO	Listening on 127.0.0.1:2790
+1612192296679	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\willi\\AppData\\Local\\Temp\\rust_mozprofilev39b7k"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612192298607	Marionette	INFO	Listening on port 2798
+1612192298725	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612192298733	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/d9c308b4011ffd30ae32.js, line 45: unreachable code after return statement
+1612192329935	geckodriver	INFO	Listening on 127.0.0.1:2867
+1612192332995	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\willi\\AppData\\Local\\Temp\\rust_mozprofilemBbdir"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612192334893	Marionette	INFO	Listening on port 2876
+1612192335049	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612192335058	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+Marionette threw an error: TypeError: browsingContextFn().currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://marionette/content/actors/MarionetteCommandsParent.jsm:332:29
+
+1612192345260	Marionette	INFO	Stopped listening on port 2876
+1612450678782	geckodriver	INFO	Listening on 127.0.0.1:1628
+1612450683168	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\willi\\AppData\\Local\\Temp\\rust_mozprofile7BwWz4"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612450685490	Marionette	INFO	Listening on port 1636
+1612450685840	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612450685848	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cccf4effcc0925e4e5bb.js, line 2: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cccf4effcc0925e4e5bb.js, line 2: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cccf4effcc0925e4e5bb.js, line 2: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cccf4effcc0925e4e5bb.js, line 2: unreachable code after return statement
+1612450765208	geckodriver	INFO	Listening on 127.0.0.1:1757
+1612450768275	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\willi\\AppData\\Local\\Temp\\rust_mozprofileXfndTW"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612450770276	Marionette	INFO	Listening on port 1765
+1612450770338	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612450770349	Marionette	ERROR	[15] No reply from Marionette:Register
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/dff9e527dced045e91d5.js, line 45: unreachable code after return statement
