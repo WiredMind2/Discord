@@ -153,7 +153,8 @@ async def on_message(message):
         async for mess in channel.history(limit=1):
             print(mess)
             await mess.delete()
-        
-token = 'NzIwODYwNzIwNTA5NDg1MDg4.XuMH-A.g5cPTA7Cle4hUYv8EnmRE2nYfdk'#Helium
-#token = 'MzA5MDA4Mjg3ODg4ODM0NTcx.X3BeuQ.ktcvDfMc3gZWMXJd3r8n4pp-Qgw'#Will.I.Am
+
+from token_secret import *
+
+token = helium
 client.run(token)
