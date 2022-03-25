@@ -2,8 +2,7 @@ import time
 
 while True:
 	try:
-		# import helium
-		print('a')
+		import helium
 		time.sleep(10000)
 	except KeyboardInterrupt:
 		print("LOOP", flush=True)
