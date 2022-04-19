@@ -70,6 +70,10 @@ class User:
             "getInvite": {
                 "url": "/invites/{invite}",
                 "method": "GET"
+            },
+            "modifyUser": {
+                "url": "/users/@me/settings",
+                "method": "PATCH"
             }
         }
 
@@ -96,7 +100,10 @@ class User:
             r = requests.delete(url, headers=self.getHeader())
         else:
             raise Exception(str(method) + " is not supported!")
-        return json.loads(r.content)
+        try:
+            return json.loads(r.content)
+        except json.decoder.JSONDecodeError:
+            return r.content
 
     def __getattr__(self, k):
         if k in self.__dict__['endpoints']:

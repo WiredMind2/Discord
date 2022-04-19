@@ -1,8 +1,10 @@
 build/
 dist/
 venv/
+discord_data/package/
 **/__pycache__/
 
 .pem
 **/token.json
 **/*secret.*
+lotr.epub
