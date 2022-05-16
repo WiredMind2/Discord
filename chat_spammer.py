@@ -33,7 +33,7 @@ def send_msg(user, msg, thread=False):
 		print("Error:", e)
 
 if __name__ == "__main__":
-	tokens = [will_i_am, adithiii]
+	tokens = [will_i_am]
 	users = [User(token) for token in tokens if token is not None]
 
 	guild = 724303646443044995  # TITANIUM
